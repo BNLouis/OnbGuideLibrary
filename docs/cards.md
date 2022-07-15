@@ -2,6 +2,8 @@
 
 Welcome to the first ONB chip making guide. In this tutorial we will be walking through the code of AirToss, a custom chip. This is a simple chip that sends out a tornado through the row and deals damage to entity it hits. The hit entity is also pushed back one tile.
 
+See [the mod thread on discord](https://discord.com/channels/455429604455219211/997465622973792276/997465627797237850) for example video.
+
 # The Directory Setup
 
 The directory of the chip is set up as the following. You'll see all the sounds, code and textures the chip needs.
@@ -254,3 +256,9 @@ function create_hit_effect(field, tile, hit_texture, hit_anim_path, hit_anim_sta
     return hitfx
 end
 ```
+
+## Next Steps
+
+Now that you have some familiarity with how a chip is laid out, the possiblities are endless.
+Want to make a fire tornado with 120 damage? Want to throw a totally new custom spell?
+If you can create the art for it, now you can!
