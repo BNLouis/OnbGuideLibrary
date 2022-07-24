@@ -1,91 +1,373 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Unofficial Chip Making Guide - Unofficial ONB Guide Library</title>
-    <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-      <script>
-        // Current page data
-        var mkdocs_page_name = "Unofficial Chip Making Guide";
-        var mkdocs_page_input_path = "cards.md";
-        var mkdocs_page_url = null;
-      </script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
-    <script src="../js/jquery-3.6.0.min.js" defer></script>
-    <!--[if lt IE 9]>
-      <script src="../js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
-</head>
+    
+      
+        <title>Chips Guide - Unofficial ONB Guide Library</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
-<body class="wy-body-for-nav" role="document">
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chips-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Unofficial ONB Guide Library
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Unofficial ONB Guide Library" class="md-header__button md-logo" aria-label="Unofficial ONB Guide Library" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../blocks/">Blocks</a>
-                </li>
-              </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Unofficial Chip Making Guide</a>
-    <ul class="current">
-    </ul>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../enemies/">Enemies</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../players/">Players</a>
-                </li>
-              </ul>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Unofficial ONB Guide Library
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chips Guide
+            
+          </span>
+        </div>
       </div>
     </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Unofficial ONB Guide Library</a>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
         
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
       </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Unofficial Chip Making Guide</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
               
-                <h1 id="unofficial-chip-making-guide">Unofficial Chip Making Guide</h1>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Unofficial ONB Guide Library" class="md-nav__button md-logo" aria-label="Unofficial ONB Guide Library" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Unofficial ONB Guide Library
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Mod Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Mod Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Mod Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../animations/" class="md-nav__link">
+        .animation files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Chips Guide
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Enemy Mod Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Enemy Mod Guide" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Enemy Mod Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enemies1/" class="md-nav__link">
+        Package Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enemies2/" class="md-nav__link">
+        Characters' entry.lua
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enemies3/" class="md-nav__link">
+        Character.lua
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="chips-guide">Chips Guide</h1>
 <p>Welcome to the first ONB chip making guide. In this tutorial we will be walking through the code of AirToss, a custom chip. This is a simple chip that sends out a tornado through the row and deals damage to entity it hits. The hit entity is also pushed back one tile.</p>
 <p>See <a href="https://discord.com/channels/455429604455219211/997465622973792276/997465627797237850">the mod thread on discord</a> for example video.</p>
 <h1 id="the-directory-setup">The Directory Setup</h1>
@@ -107,96 +389,96 @@
 <p>First, the textures, sounds and animations the chip uses should be loaded.
 The variable <em>_modpath</em> used in these functions refers to the mod folder.
 Textures and sounds must be loaded with <em>Engine.load_audio</em> or <em>Engine.load_texture</em>, but animations do not need to be.</p>
-<pre><code class="language-lua">--- Custom Chip: Tornado Toss
-
---- Setup Textures, Animations and Sounds
---- modpath refers to the root folder of the chip.
-TORNADO_TEXTURE = Engine.load_texture(_modpath .. &quot;tornado.png&quot;)
-TORNADO_ANIMATION = _modpath .. &quot;tornado.animation&quot;
-WIND_SFX = Engine.load_audio(_modpath .. &quot;tornado.ogg&quot;)
-HIT_TEXTURE = Engine.load_texture(_modpath .. &quot;effect.png&quot;)
-HIT_ANIM_PATH = _modpath .. &quot;effect.animation&quot;
-HIT_SOUND = Engine.load_audio(_modpath .. &quot;hitsound.ogg&quot;)
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">--- Custom Chip: Tornado Toss</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">--- Setup Textures, Animations and Sounds</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">--- modpath refers to the root folder of the chip.</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">TORNADO_TEXTURE</span> <span class="o">=</span> <span class="n">Engine</span><span class="p">.</span><span class="n">load_texture</span><span class="p">(</span><span class="n">_modpath</span> <span class="o">..</span> <span class="s2">&quot;tornado.png&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">TORNADO_ANIMATION</span> <span class="o">=</span> <span class="n">_modpath</span> <span class="o">..</span> <span class="s2">&quot;tornado.animation&quot;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">WIND_SFX</span> <span class="o">=</span> <span class="n">Engine</span><span class="p">.</span><span class="n">load_audio</span><span class="p">(</span><span class="n">_modpath</span> <span class="o">..</span> <span class="s2">&quot;tornado.ogg&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">HIT_TEXTURE</span> <span class="o">=</span> <span class="n">Engine</span><span class="p">.</span><span class="n">load_texture</span><span class="p">(</span><span class="n">_modpath</span> <span class="o">..</span> <span class="s2">&quot;effect.png&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">HIT_ANIM_PATH</span> <span class="o">=</span> <span class="n">_modpath</span> <span class="o">..</span> <span class="s2">&quot;effect.animation&quot;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">HIT_SOUND</span> <span class="o">=</span> <span class="n">Engine</span><span class="p">.</span><span class="n">load_audio</span><span class="p">(</span><span class="n">_modpath</span> <span class="o">..</span> <span class="s2">&quot;hitsound.ogg&quot;</span><span class="p">)</span>
+</code></pre></div>
 <p>Next, you'll notice a DAMAGE variable. This is referenced later on to set the displayed damage on this chip as well as the actual damage of the spell.</p>
-<pre><code class="language-lua">--Damage property.
-DAMAGE = 90
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">--Damage property.</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">DAMAGE</span> <span class="o">=</span> <span class="mi">90</span>
+</code></pre></div>
 <p>After that is the package_init, which has been commented with what each line does. Package_init is a required function in card mods.</p>
 <h2 id="package-init">Package Init</h2>
-<pre><code class="language-lua">function package_init(package)
-    local props = package:get_card_props()
-    --standard properties
-    -- DisplayName of the chip
-    props.shortname = &quot;AirToss&quot;
-    -- Damage displayed on the chip
-    props.damage = DAMAGE
-    -- Whether or not this chip uses time freeze.
-    props.time_freeze = false
-    -- Element displayed on this chip.
-    props.element = Element.Wind
-    -- Description of this chip in the folder
-    props.description = &quot;Throws a tornado forward!&quot;
-    -- Description of this chip when special button is presssed
-    props.long_description = &quot;Throws a tornado that pushes forward!&quot;
-    -- Package ID. Usually uses some form of the author's name + chip name
-    package:declare_package_id(&quot;com.louise.&quot; .. props.shortname)
-    -- Sets small icon icon
-    package:set_icon_texture(Engine.load_texture(_modpath .. &quot;icon.png&quot;))
-    -- Sets large preview graphic
-    package:set_preview_texture(Engine.load_texture(_modpath .. &quot;preview.png&quot;))
-    -- List of codes this chip will be available as.
-    package:set_codes({ &quot;A&quot;, &quot;I&quot;, &quot;R&quot;, &quot;*&quot; })
-end
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kr">function</span> <span class="nf">package_init</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="kd">local</span> <span class="n">props</span> <span class="o">=</span> <span class="n">package</span><span class="p">:</span><span class="n">get_card_props</span><span class="p">()</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="c1">--standard properties</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="c1">-- DisplayName of the chip</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">props</span><span class="p">.</span><span class="n">shortname</span> <span class="o">=</span> <span class="s2">&quot;AirToss&quot;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="c1">-- Damage displayed on the chip</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">props</span><span class="p">.</span><span class="n">damage</span> <span class="o">=</span> <span class="n">DAMAGE</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="c1">-- Whether or not this chip uses time freeze.</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="n">props</span><span class="p">.</span><span class="n">time_freeze</span> <span class="o">=</span> <span class="kc">false</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="c1">-- Element displayed on this chip.</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="n">props</span><span class="p">.</span><span class="n">element</span> <span class="o">=</span> <span class="n">Element</span><span class="p">.</span><span class="n">Wind</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="c1">-- Description of this chip in the folder</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="n">props</span><span class="p">.</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Throws a tornado forward!&quot;</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="c1">-- Description of this chip when special button is presssed</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="n">props</span><span class="p">.</span><span class="n">long_description</span> <span class="o">=</span> <span class="s2">&quot;Throws a tornado that pushes forward!&quot;</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="c1">-- Package ID. Usually uses some form of the author&#39;s name + chip name</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    <span class="n">package</span><span class="p">:</span><span class="n">declare_package_id</span><span class="p">(</span><span class="s2">&quot;com.louise.&quot;</span> <span class="o">..</span> <span class="n">props</span><span class="p">.</span><span class="n">shortname</span><span class="p">)</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>    <span class="c1">-- Sets small icon icon</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>    <span class="n">package</span><span class="p">:</span><span class="n">set_icon_texture</span><span class="p">(</span><span class="n">Engine</span><span class="p">.</span><span class="n">load_texture</span><span class="p">(</span><span class="n">_modpath</span> <span class="o">..</span> <span class="s2">&quot;icon.png&quot;</span><span class="p">))</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>    <span class="c1">-- Sets large preview graphic</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>    <span class="n">package</span><span class="p">:</span><span class="n">set_preview_texture</span><span class="p">(</span><span class="n">Engine</span><span class="p">.</span><span class="n">load_texture</span><span class="p">(</span><span class="n">_modpath</span> <span class="o">..</span> <span class="s2">&quot;preview.png&quot;</span><span class="p">))</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>    <span class="c1">-- List of codes this chip will be available as.</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    <span class="n">package</span><span class="p">:</span><span class="n">set_codes</span><span class="p">({</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="s2">&quot;R&quot;</span><span class="p">,</span> <span class="s2">&quot;*&quot;</span> <span class="p">})</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="kr">end</span>
+</code></pre></div>
 <h2 id="card-create-action">Card Create Action</h2>
 <p>Card create action is where most of the action happens. You’ll see that a reference to the player is passed into this function as well as the card props we previously defined.</p>
 <p>Card create action handles setting up the player's animation and defining what happens during the frames of that animation. In this case, we are using the <strong>PLAYER_SWORD</strong> animation, but showing the navi's hand instead of a sword, which is common for these types of "summon" spells.</p>
-<pre><code class="language-lua">function card_create_action(user, props)
-    -- Creates a new cardAction that will play the play_sword animation
-    local action = Battle.CardAction.new(user, &quot;PLAYER_SWORD&quot;)
-    -- Prevents the user from using other cards during this animation
-    action:set_lockout(make_animation_lockout())
-
-    --Function that happens when the card actually executes.
-    action.execute_func = function(self, user)
-        local actor = self:get_actor()
-
-        -- set:add_anim_action adds functions that execute on certain frames of the
-        -- action animation.
-        self:add_anim_action(1, function()
-            -- Allows the action to be countered during this window.
-            actor:toggle_counter(true)
-        end)
-        self:add_anim_action(2, function()
-            -- Necessary code to render the hand of the user
-            local hilt = self:add_attachment(&quot;HILT&quot;)
-            local hilt_sprite = hilt:sprite()
-            hilt_sprite:set_texture(actor:get_texture())
-            hilt_sprite:set_layer(-2)
-            hilt_sprite:enable_parent_shader(true)
-            local hilt_anim = hilt:get_animation()
-            hilt_anim:copy_from(actor:get_animation())
-            hilt_anim:set_state(&quot;HAND&quot;)
-            hilt_anim:refresh(hilt_sprite)
-            -- Get the current
-            local direction = user:get_facing()
-            -- Play the wind effect defined earlier
-            Engine.play_audio(WIND_SFX, AudioPriority.High)
-            -- Now control will be handed over to the create_tornado function.
-            -- Variables that are needed by that function are passed in here.
-            create_tornado(user, user:get_tile(direction, 1), DAMAGE, 10, direction)
-        end)
-        self:add_anim_action(3, function()
-        end)
-        self:add_anim_action(4, function()
-            -- End the counterable window
-            user:toggle_counter(false)
-        end)
-    end
-    return action
-end
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kr">function</span> <span class="nf">card_create_action</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">props</span><span class="p">)</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="c1">-- Creates a new cardAction that will play the play_sword animation</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="kd">local</span> <span class="n">action</span> <span class="o">=</span> <span class="n">Battle</span><span class="p">.</span><span class="n">CardAction</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="s2">&quot;PLAYER_SWORD&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="c1">-- Prevents the user from using other cards during this animation</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">action</span><span class="p">:</span><span class="n">set_lockout</span><span class="p">(</span><span class="n">make_animation_lockout</span><span class="p">())</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="c1">--Function that happens when the card actually executes.</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">action</span><span class="p">.</span><span class="n">execute_func</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">user</span><span class="p">)</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        <span class="kd">local</span> <span class="n">actor</span> <span class="o">=</span> <span class="n">self</span><span class="p">:</span><span class="n">get_actor</span><span class="p">()</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        <span class="c1">-- set:add_anim_action adds functions that execute on certain frames of the</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>        <span class="c1">-- action animation.</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        <span class="n">self</span><span class="p">:</span><span class="n">add_anim_action</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>            <span class="c1">-- Allows the action to be countered during this window.</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>            <span class="n">actor</span><span class="p">:</span><span class="n">toggle_counter</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>        <span class="kr">end</span><span class="p">)</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>        <span class="n">self</span><span class="p">:</span><span class="n">add_anim_action</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>            <span class="c1">-- Necessary code to render the hand of the user</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>            <span class="kd">local</span> <span class="n">hilt</span> <span class="o">=</span> <span class="n">self</span><span class="p">:</span><span class="n">add_attachment</span><span class="p">(</span><span class="s2">&quot;HILT&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>            <span class="kd">local</span> <span class="n">hilt_sprite</span> <span class="o">=</span> <span class="n">hilt</span><span class="p">:</span><span class="n">sprite</span><span class="p">()</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>            <span class="n">hilt_sprite</span><span class="p">:</span><span class="n">set_texture</span><span class="p">(</span><span class="n">actor</span><span class="p">:</span><span class="n">get_texture</span><span class="p">())</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>            <span class="n">hilt_sprite</span><span class="p">:</span><span class="n">set_layer</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>            <span class="n">hilt_sprite</span><span class="p">:</span><span class="n">enable_parent_shader</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>            <span class="kd">local</span> <span class="n">hilt_anim</span> <span class="o">=</span> <span class="n">hilt</span><span class="p">:</span><span class="n">get_animation</span><span class="p">()</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>            <span class="n">hilt_anim</span><span class="p">:</span><span class="n">copy_from</span><span class="p">(</span><span class="n">actor</span><span class="p">:</span><span class="n">get_animation</span><span class="p">())</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>            <span class="n">hilt_anim</span><span class="p">:</span><span class="n">set_state</span><span class="p">(</span><span class="s2">&quot;HAND&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>            <span class="n">hilt_anim</span><span class="p">:</span><span class="n">refresh</span><span class="p">(</span><span class="n">hilt_sprite</span><span class="p">)</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>            <span class="c1">-- Get the current</span>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>            <span class="kd">local</span> <span class="n">direction</span> <span class="o">=</span> <span class="n">user</span><span class="p">:</span><span class="n">get_facing</span><span class="p">()</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>            <span class="c1">-- Play the wind effect defined earlier</span>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>            <span class="n">Engine</span><span class="p">.</span><span class="n">play_audio</span><span class="p">(</span><span class="n">WIND_SFX</span><span class="p">,</span> <span class="n">AudioPriority</span><span class="p">.</span><span class="n">High</span><span class="p">)</span>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>            <span class="c1">-- Now control will be handed over to the create_tornado function.</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>            <span class="c1">-- Variables that are needed by that function are passed in here.</span>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>            <span class="n">create_tornado</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">user</span><span class="p">:</span><span class="n">get_tile</span><span class="p">(</span><span class="n">direction</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">DAMAGE</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">direction</span><span class="p">)</span>
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>        <span class="kr">end</span><span class="p">)</span>
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>        <span class="n">self</span><span class="p">:</span><span class="n">add_anim_action</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>        <span class="kr">end</span><span class="p">)</span>
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>        <span class="n">self</span><span class="p">:</span><span class="n">add_anim_action</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>            <span class="c1">-- End the counterable window</span>
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>            <span class="n">user</span><span class="p">:</span><span class="n">toggle_counter</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span>
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>        <span class="kr">end</span><span class="p">)</span>
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>    <span class="kr">end</span>
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>    <span class="kr">return</span> <span class="n">action</span>
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a><span class="kr">end</span>
+</code></pre></div>
 <h2 id="create-tornado-function">Create Tornado Function</h2>
 <p>To improve readability of the code, we created another function for handling the tornado spell.</p>
 <p>Notes: Spell:set_hit_props takes in a HitProps object. This is where you can define the damage, element and additional properties. In this case our spell will have the following properties:</p>
@@ -209,156 +491,184 @@ end
 <li><strong>Drag.new(direction, 1)</strong> This moves the target in the given direction by one tile.</li>
 </ul>
 <p>Full set of hit props is listed at <a href="https://protobasilisk.github.io/OpenNetBattleDocs/api/#hit">the api site</a>.</p>
-<pre><code class="language-lua">---@param user Entity The user summoning a tornado
----@param tile Tile The tile to summon the tornado on
----@param damage number The amount of damage the tornado will do
----@param speed number The number of frames it takes the tornado to travel 1 tile.
----@param direction any The direction the spell is travelling
-function create_tornado(user, tile, damage, speed, direction)
-    -- Creates a new spell that belongs to the user's team.
-    local spell = Battle.Spell.new(user:get_team())
-
-    --Set the hit properties of this spell.
-    spell:set_hit_props(
-        HitProps.new(
-            damage,
-            Hit.Impact | Hit.Flash | Hit.Flinch | Hit.Drag,
-            Element.Wind,
-            user:get_context(),
-            Drag.new(direction, 1)
-        )
-    )
-    -- Setup sprite of the spell
-    local sprite = spell:sprite()
-    sprite:set_texture(TORNADO_TEXTURE)
-    sprite:set_layer(-1)
-    -- Setup animation of the spell
-    local anim = spell:get_animation()
-    anim:load(TORNADO_ANIMATION)
-    anim:set_state(&quot;1&quot;)
-    anim:set_playback(Playback.Loop)
-    anim:refresh(sprite)
-
-    spell.update_func = function(self, dt)
-        --- Gets the next tile in the specified direction.
-        --- If that tile is out of bounds, it returns nil
-        local tile = spell:get_tile(direction, 1)
-        if (tile == nil) then
-            -- Spell will be erased once it reaches the end of the field.
-            spell:erase()
-            return
-        end
-        --- Makes the spell slide to the next tile over a certain number of frames.
-        spell:slide(tile, frames(speed), frames(0), ActionOrder.Voluntary, nil)
-        --- Attacks the entities this spell collides with.
-        self:get_current_tile():attack_entities(self)
-    end
-
-    spell.attack_func = function(self, other)
-        -- Erases the spell once it hits something
-        create_hit_effect(spell:get_field(), spell:get_current_tile(), HIT_TEXTURE, HIT_ANIM_PATH, &quot;8&quot;, HIT_SOUND)
-        spell:erase()
-    end
-
-    spell.delete_func = function(self)
-        spell:erase()
-    end
-    spell.battle_end_func = function(self)
-        spell:erase()
-    end
-
-    --- Function that decides whether or not this spell is allowed
-    --- to move to a certain tile. This is automatically called for
-    --- functions such as slide and teleport.
-    --- In this case since it always returns true, it can move over
-    --- any tile.
-    spell.can_move_to_func = function(tile)
-        return true
-    end
-    user:get_field():spawn(spell, tile)
-    return spell
-end
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">---@param user Entity The user summoning a tornado</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1">---@param tile Tile The tile to summon the tornado on</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1">---@param damage number The amount of damage the tornado will do</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1">---@param speed number The number of frames it takes the tornado to travel 1 tile.</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1">---@param direction any The direction the spell is travelling</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="kr">function</span> <span class="nf">create_tornado</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">tile</span><span class="p">,</span> <span class="n">damage</span><span class="p">,</span> <span class="n">speed</span><span class="p">,</span> <span class="n">direction</span><span class="p">)</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="c1">-- Creates a new spell that belongs to the user&#39;s team.</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="kd">local</span> <span class="n">spell</span> <span class="o">=</span> <span class="n">Battle</span><span class="p">.</span><span class="n">Spell</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">user</span><span class="p">:</span><span class="n">get_team</span><span class="p">())</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="c1">--Set the hit properties of this spell.</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="n">spell</span><span class="p">:</span><span class="n">set_hit_props</span><span class="p">(</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>        <span class="n">HitProps</span><span class="p">.</span><span class="n">new</span><span class="p">(</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>            <span class="n">damage</span><span class="p">,</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>            <span class="n">Hit</span><span class="p">.</span><span class="n">Impact</span> <span class="o">|</span> <span class="n">Hit</span><span class="p">.</span><span class="n">Flash</span> <span class="o">|</span> <span class="n">Hit</span><span class="p">.</span><span class="n">Flinch</span> <span class="o">|</span> <span class="n">Hit</span><span class="p">.</span><span class="n">Drag</span><span class="p">,</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>            <span class="n">Element</span><span class="p">.</span><span class="n">Wind</span><span class="p">,</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>            <span class="n">user</span><span class="p">:</span><span class="n">get_context</span><span class="p">(),</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>            <span class="n">Drag</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">direction</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>        <span class="p">)</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>    <span class="p">)</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>    <span class="c1">-- Setup sprite of the spell</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>    <span class="kd">local</span> <span class="n">sprite</span> <span class="o">=</span> <span class="n">spell</span><span class="p">:</span><span class="n">sprite</span><span class="p">()</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>    <span class="n">sprite</span><span class="p">:</span><span class="n">set_texture</span><span class="p">(</span><span class="n">TORNADO_TEXTURE</span><span class="p">)</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>    <span class="n">sprite</span><span class="p">:</span><span class="n">set_layer</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>    <span class="c1">-- Setup animation of the spell</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>    <span class="kd">local</span> <span class="n">anim</span> <span class="o">=</span> <span class="n">spell</span><span class="p">:</span><span class="n">get_animation</span><span class="p">()</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>    <span class="n">anim</span><span class="p">:</span><span class="nb">load</span><span class="p">(</span><span class="n">TORNADO_ANIMATION</span><span class="p">)</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>    <span class="n">anim</span><span class="p">:</span><span class="n">set_state</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>    <span class="n">anim</span><span class="p">:</span><span class="n">set_playback</span><span class="p">(</span><span class="n">Playback</span><span class="p">.</span><span class="n">Loop</span><span class="p">)</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a>    <span class="n">anim</span><span class="p">:</span><span class="n">refresh</span><span class="p">(</span><span class="n">sprite</span><span class="p">)</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a>    <span class="n">spell</span><span class="p">.</span><span class="n">update_func</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a>        <span class="c1">--- Gets the next tile in the specified direction.</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a>        <span class="c1">--- If that tile is out of bounds, it returns nil</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a>        <span class="kd">local</span> <span class="n">tile</span> <span class="o">=</span> <span class="n">spell</span><span class="p">:</span><span class="n">get_tile</span><span class="p">(</span><span class="n">direction</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a>        <span class="kr">if</span> <span class="p">(</span><span class="n">tile</span> <span class="o">==</span> <span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a>            <span class="c1">-- Spell will be erased once it reaches the end of the field.</span>
+<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a>            <span class="n">spell</span><span class="p">:</span><span class="n">erase</span><span class="p">()</span>
+<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a>            <span class="kr">return</span>
+<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a>        <span class="kr">end</span>
+<a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a>        <span class="c1">--- Makes the spell slide to the next tile over a certain number of frames.</span>
+<a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a>        <span class="n">spell</span><span class="p">:</span><span class="n">slide</span><span class="p">(</span><span class="n">tile</span><span class="p">,</span> <span class="n">frames</span><span class="p">(</span><span class="n">speed</span><span class="p">),</span> <span class="n">frames</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">ActionOrder</span><span class="p">.</span><span class="n">Voluntary</span><span class="p">,</span> <span class="kc">nil</span><span class="p">)</span>
+<a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a>        <span class="c1">--- Attacks the entities this spell collides with.</span>
+<a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a>        <span class="n">self</span><span class="p">:</span><span class="n">get_current_tile</span><span class="p">():</span><span class="n">attack_entities</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+<a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a>    <span class="kr">end</span>
+<a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a>
+<a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a>    <span class="n">spell</span><span class="p">.</span><span class="n">attack_func</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span>
+<a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a>        <span class="c1">-- Erases the spell once it hits something</span>
+<a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a>        <span class="n">create_hit_effect</span><span class="p">(</span><span class="n">spell</span><span class="p">:</span><span class="n">get_field</span><span class="p">(),</span> <span class="n">spell</span><span class="p">:</span><span class="n">get_current_tile</span><span class="p">(),</span> <span class="n">HIT_TEXTURE</span><span class="p">,</span> <span class="n">HIT_ANIM_PATH</span><span class="p">,</span> <span class="s2">&quot;8&quot;</span><span class="p">,</span> <span class="n">HIT_SOUND</span><span class="p">)</span>
+<a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a>        <span class="n">spell</span><span class="p">:</span><span class="n">erase</span><span class="p">()</span>
+<a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a>    <span class="kr">end</span>
+<a id="__codelineno-4-51" name="__codelineno-4-51" href="#__codelineno-4-51"></a>
+<a id="__codelineno-4-52" name="__codelineno-4-52" href="#__codelineno-4-52"></a>    <span class="n">spell</span><span class="p">.</span><span class="n">delete_func</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+<a id="__codelineno-4-53" name="__codelineno-4-53" href="#__codelineno-4-53"></a>        <span class="n">spell</span><span class="p">:</span><span class="n">erase</span><span class="p">()</span>
+<a id="__codelineno-4-54" name="__codelineno-4-54" href="#__codelineno-4-54"></a>    <span class="kr">end</span>
+<a id="__codelineno-4-55" name="__codelineno-4-55" href="#__codelineno-4-55"></a>    <span class="n">spell</span><span class="p">.</span><span class="n">battle_end_func</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+<a id="__codelineno-4-56" name="__codelineno-4-56" href="#__codelineno-4-56"></a>        <span class="n">spell</span><span class="p">:</span><span class="n">erase</span><span class="p">()</span>
+<a id="__codelineno-4-57" name="__codelineno-4-57" href="#__codelineno-4-57"></a>    <span class="kr">end</span>
+<a id="__codelineno-4-58" name="__codelineno-4-58" href="#__codelineno-4-58"></a>
+<a id="__codelineno-4-59" name="__codelineno-4-59" href="#__codelineno-4-59"></a>    <span class="c1">--- Function that decides whether or not this spell is allowed</span>
+<a id="__codelineno-4-60" name="__codelineno-4-60" href="#__codelineno-4-60"></a>    <span class="c1">--- to move to a certain tile. This is automatically called for</span>
+<a id="__codelineno-4-61" name="__codelineno-4-61" href="#__codelineno-4-61"></a>    <span class="c1">--- functions such as slide and teleport.</span>
+<a id="__codelineno-4-62" name="__codelineno-4-62" href="#__codelineno-4-62"></a>    <span class="c1">--- In this case since it always returns true, it can move over</span>
+<a id="__codelineno-4-63" name="__codelineno-4-63" href="#__codelineno-4-63"></a>    <span class="c1">--- any tile.</span>
+<a id="__codelineno-4-64" name="__codelineno-4-64" href="#__codelineno-4-64"></a>    <span class="n">spell</span><span class="p">.</span><span class="n">can_move_to_func</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">tile</span><span class="p">)</span>
+<a id="__codelineno-4-65" name="__codelineno-4-65" href="#__codelineno-4-65"></a>        <span class="kr">return</span> <span class="kc">true</span>
+<a id="__codelineno-4-66" name="__codelineno-4-66" href="#__codelineno-4-66"></a>    <span class="kr">end</span>
+<a id="__codelineno-4-67" name="__codelineno-4-67" href="#__codelineno-4-67"></a>    <span class="n">user</span><span class="p">:</span><span class="n">get_field</span><span class="p">():</span><span class="n">spawn</span><span class="p">(</span><span class="n">spell</span><span class="p">,</span> <span class="n">tile</span><span class="p">)</span>
+<a id="__codelineno-4-68" name="__codelineno-4-68" href="#__codelineno-4-68"></a>    <span class="kr">return</span> <span class="n">spell</span>
+<a id="__codelineno-4-69" name="__codelineno-4-69" href="#__codelineno-4-69"></a><span class="kr">end</span>
+</code></pre></div>
 <h2 id="create-hit-effect-function">Create Hit Effect Function</h2>
 <p>Lastly, for BN accuracy, we have the hit effect function. This spawns an artifact, which is a sort of texture and animation that does not interact with entities. Most spells have an impact effect, which is what this function is doing.</p>
-<pre><code class="language-lua">--- create hit effect.
----@param field any #A field to spawn the effect on
----@param tile Tile tile to spawn effect on
----@param hit_texture any Texture hit effect. (Engine.load_texture)
----@param hit_anim_path any The animation file path
----@param hit_anim_state any The hit animation to play
----@param sfx any Audio # Audio object to play
----@return any returns the hit fx
-function create_hit_effect(field, tile, hit_texture, hit_anim_path, hit_anim_state, sfx)
-    -- Create artifact, artifacts do not have hitboxes and are used mostly for special effects
-    local hitfx = Battle.Artifact.new()
-    hitfx:set_texture(hit_texture, true)
-    -- This will randomize the position of the effect a bit.
-    hitfx:set_offset(math.random(-25, 25), math.random(-25, 25))
-    local hitfx_sprite = hitfx:sprite()
-    hitfx_sprite:set_layer(-3)
-    local hitfx_anim = hitfx:get_animation()
-    hitfx_anim:load(hit_anim_path)
-    hitfx_anim:set_state(hit_anim_state)
-    hitfx_anim:refresh(hitfx_sprite)
-    hitfx_anim:on_frame(1, function()
-        Engine.play_audio(sfx, AudioPriority.Highest)
-    end)
-    hitfx_anim:on_complete(function()
-        hitfx:erase()
-    end)
-    field:spawn(hitfx, tile)
-    return hitfx
-end
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">--- create hit effect.</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1">---@param field any #A field to spawn the effect on</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1">---@param tile Tile tile to spawn effect on</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1">---@param hit_texture any Texture hit effect. (Engine.load_texture)</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1">---@param hit_anim_path any The animation file path</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1">---@param hit_anim_state any The hit animation to play</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1">---@param sfx any Audio # Audio object to play</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c1">---@return any returns the hit fx</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="kr">function</span> <span class="nf">create_hit_effect</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">tile</span><span class="p">,</span> <span class="n">hit_texture</span><span class="p">,</span> <span class="n">hit_anim_path</span><span class="p">,</span> <span class="n">hit_anim_state</span><span class="p">,</span> <span class="n">sfx</span><span class="p">)</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    <span class="c1">-- Create artifact, artifacts do not have hitboxes and are used mostly for special effects</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>    <span class="kd">local</span> <span class="n">hitfx</span> <span class="o">=</span> <span class="n">Battle</span><span class="p">.</span><span class="n">Artifact</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>    <span class="n">hitfx</span><span class="p">:</span><span class="n">set_texture</span><span class="p">(</span><span class="n">hit_texture</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>    <span class="c1">-- This will randomize the position of the effect a bit.</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>    <span class="n">hitfx</span><span class="p">:</span><span class="n">set_offset</span><span class="p">(</span><span class="nb">math.random</span><span class="p">(</span><span class="o">-</span><span class="mi">25</span><span class="p">,</span> <span class="mi">25</span><span class="p">),</span> <span class="nb">math.random</span><span class="p">(</span><span class="o">-</span><span class="mi">25</span><span class="p">,</span> <span class="mi">25</span><span class="p">))</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>    <span class="kd">local</span> <span class="n">hitfx_sprite</span> <span class="o">=</span> <span class="n">hitfx</span><span class="p">:</span><span class="n">sprite</span><span class="p">()</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    <span class="n">hitfx_sprite</span><span class="p">:</span><span class="n">set_layer</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>    <span class="kd">local</span> <span class="n">hitfx_anim</span> <span class="o">=</span> <span class="n">hitfx</span><span class="p">:</span><span class="n">get_animation</span><span class="p">()</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>    <span class="n">hitfx_anim</span><span class="p">:</span><span class="nb">load</span><span class="p">(</span><span class="n">hit_anim_path</span><span class="p">)</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>    <span class="n">hitfx_anim</span><span class="p">:</span><span class="n">set_state</span><span class="p">(</span><span class="n">hit_anim_state</span><span class="p">)</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>    <span class="n">hitfx_anim</span><span class="p">:</span><span class="n">refresh</span><span class="p">(</span><span class="n">hitfx_sprite</span><span class="p">)</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>    <span class="n">hitfx_anim</span><span class="p">:</span><span class="n">on_frame</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>        <span class="n">Engine</span><span class="p">.</span><span class="n">play_audio</span><span class="p">(</span><span class="n">sfx</span><span class="p">,</span> <span class="n">AudioPriority</span><span class="p">.</span><span class="n">Highest</span><span class="p">)</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>    <span class="kr">end</span><span class="p">)</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>    <span class="n">hitfx_anim</span><span class="p">:</span><span class="n">on_complete</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>        <span class="n">hitfx</span><span class="p">:</span><span class="n">erase</span><span class="p">()</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>    <span class="kr">end</span><span class="p">)</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>    <span class="n">field</span><span class="p">:</span><span class="n">spawn</span><span class="p">(</span><span class="n">hitfx</span><span class="p">,</span> <span class="n">tile</span><span class="p">)</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>    <span class="kr">return</span> <span class="n">hitfx</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="kr">end</span>
+</code></pre></div>
 <h2 id="next-steps">Next Steps</h2>
 <p>Now that you have some familiarity with how a chip is laid out, the possiblities are endless.
 Want to make a fire tornado with 120 damage? Want to throw a totally new custom spell?
 If you can create the art for it, now you can!</p>
+
               
-            </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../blocks/" class="btn btn-neutral float-left" title="Blocks"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../enemies/" class="btn btn-neutral float-right" title="Enemies">Next <span class="icon icon-circle-arrow-right"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-          
+            </article>
+            
+          </div>
         </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      </main>
+      
+        <footer class="md-footer">
+  
     
-    
-      <span><a href="../blocks/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../enemies/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../animations/" class="md-footer__link md-footer__link--prev" aria-label="Previous: .animation files" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              .animation files
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../enemies1/" class="md-footer__link md-footer__link--next" aria-label="Next: Package Setup" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Package Setup
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme_extra.js" defer></script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
-
-</body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
 </html>

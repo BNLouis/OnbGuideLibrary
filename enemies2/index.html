@@ -13,7 +13,7 @@
     
     
       
-        <title>Players - Unofficial ONB Guide Library</title>
+        <title>Characters' entry.lua - Unofficial ONB Guide Library</title>
       
     
     
@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#characters-entrylua" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -88,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Players
+              Characters' entry.lua
             
           </span>
         </div>
@@ -187,12 +192,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -241,12 +248,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" checked>
       
       
       
@@ -281,11 +290,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../enemies2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Characters' entry.lua
       </a>
+      
     </li>
   
 
@@ -335,6 +354,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -348,10 +369,44 @@
                 
 
 
-  <h1>Players</h1>
-
-<p>Under Construction, for now look at
-<a href="https://docs.google.com/document/d/1Nw4zCf0VQxk-rfK61CJ2E4NoHhyOu-YskyH4_ZpLFs8/edit">Destroyed and Konsts' Guide!</a></p>
+<h1 id="characters-entrylua">Characters' entry.lua</h1>
+<p>Next, navigate to the bunny folder and open entry.lua. In this file, enemy properties will be specified.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">local</span> <span class="n">shared_package_init</span> <span class="o">=</span> <span class="n">include</span><span class="p">(</span><span class="s2">&quot;./character.lua&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kr">function</span> <span class="nf">package_init</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="kd">local</span> <span class="n">character_info</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Bunny&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="n">hp</span> <span class="o">=</span> <span class="mi">40</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="n">damage</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="n">palette</span> <span class="o">=</span> <span class="n">_folderpath</span> <span class="o">..</span> <span class="s2">&quot;V1.png&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="n">height</span> <span class="o">=</span> <span class="mi">44</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        <span class="n">frames_between_actions</span> <span class="o">=</span> <span class="mi">34</span><span class="p">,</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        <span class="n">fast_hop_frames</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">}</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="kr">if</span> <span class="n">character</span><span class="p">:</span><span class="n">get_rank</span><span class="p">()</span> <span class="o">==</span> <span class="n">Rank</span><span class="p">.</span><span class="n">SP</span> <span class="kr">then</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="n">character_info</span><span class="p">.</span><span class="n">hp</span> <span class="o">=</span> <span class="mi">220</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="n">character_info</span><span class="p">.</span><span class="n">damage</span> <span class="o">=</span> <span class="mi">150</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="n">character_info</span><span class="p">.</span><span class="n">palette</span> <span class="o">=</span> <span class="n">_folderpath</span> <span class="o">..</span> <span class="s2">&quot;SP.png&quot;</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        <span class="n">character_info</span><span class="p">.</span><span class="n">frames_between_actions</span> <span class="o">=</span> <span class="mi">14</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        <span class="n">character_info</span><span class="p">.</span><span class="n">fast_hop_frames</span> <span class="o">=</span> <span class="mi">4</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="kr">end</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    <span class="kr">if</span> <span class="n">character</span><span class="p">:</span><span class="n">get_rank</span><span class="p">()</span> <span class="o">==</span> <span class="n">Rank</span><span class="p">.</span><span class="n">NM</span> <span class="kr">then</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>        <span class="n">character_info</span><span class="p">.</span><span class="n">damage</span> <span class="o">=</span> <span class="mi">250</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        <span class="n">character_info</span><span class="p">.</span><span class="n">palette</span> <span class="o">=</span> <span class="n">_folderpath</span> <span class="o">..</span> <span class="s2">&quot;NM.png&quot;</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>        <span class="n">character_info</span><span class="p">.</span><span class="n">hp</span> <span class="o">=</span> <span class="mi">500</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>        <span class="n">character_info</span><span class="p">.</span><span class="n">frames_between_actions</span> <span class="o">=</span> <span class="mi">8</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>        <span class="n">character_info</span><span class="p">.</span><span class="n">fast_hop_frames</span> <span class="o">=</span> <span class="mi">2</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    <span class="kr">end</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    <span class="n">shared_package_init</span><span class="p">(</span><span class="n">character</span><span class="p">,</span> <span class="n">character_info</span><span class="p">)</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="kr">end</span>
+</code></pre></div>
+<p>This code defines some base properties that will be used later on in the file character.lua
+Some of these properties like name and hp may be self explanatory, but other properties may be specific to bunny and we'll need to check out the package init to see how these properties are used.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The rank of the character is being retrieved by using character:get_rank(). This allows us to define different values for other ranks of enemies, such as increased hp/damage/speed, different palettes, etc. If you had a character that does not change name, you could have defined all of the versions here.</p>
+</div>
+<p>If you look at TuffBunny/entry.lua and MegaBunny/entry.lua you'll see very similar code, minus the extra versions info.</p>
+<p>All of them import <strong>../Bunny/character.lua</strong>, which will be covered in part 3.</p>
 
               
             </article>
@@ -367,7 +422,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../enemies3/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Character.lua" rel="prev">
+        <a href="../enemies1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Package Setup" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -376,11 +431,26 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Character.lua
+              Package Setup
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../enemies3/" class="md-footer__link md-footer__link--next" aria-label="Next: Character.lua" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Character.lua
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
       
     </nav>
   

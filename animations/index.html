@@ -13,7 +13,7 @@
     
     
       
-        <title>Players - Unofficial ONB Guide Library</title>
+        <title>.animation files - Unofficial ONB Guide Library</title>
       
     
     
@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#animation-files" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -88,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Players
+              .animation files
             
           </span>
         </div>
@@ -187,12 +192,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -213,11 +220,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../animations/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         .animation files
       </a>
+      
     </li>
   
 
@@ -335,6 +352,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -348,10 +367,30 @@
                 
 
 
-  <h1>Players</h1>
-
-<p>Under Construction, for now look at
-<a href="https://docs.google.com/document/d/1Nw4zCf0VQxk-rfK61CJ2E4NoHhyOu-YskyH4_ZpLFs8/edit">Destroyed and Konsts' Guide!</a></p>
+<h1 id="animation-files">.animation files</h1>
+<p>.animation files are files used by the engine to animate textures.
+They can be opened in any text editor. If you want to use a graphical user interface to build animations you can use <a href="https://keristero.github.io/spritesheet-tool/">Keristero’s sprite tool</a>, but read on if you want to know the technical details.</p>
+<p>Animation files will have one or more animation states defined in them.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>animation state=&quot;IDLE_U&quot;
+</code></pre></div>
+<p><strong>animation</strong>: Indicates the start of a new animation</p>
+<p><strong>state</strong>: Name of the animation, in this case IDLE_U. If its a player animation, you'll need to use the standard player states.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>frame duration=&quot;0.05&quot; x=&quot;0&quot; y=&quot;0&quot; w=&quot;100&quot; h=&quot;100&quot; originx=&quot;50&quot; originy=&quot;100&quot; flipx=&quot;1&quot; flipy=&quot;0&quot;
+</code></pre></div>
+<p><strong>frame</strong>: Indicates a new frame in the animation. Must come after an animation state</p>
+<p><strong>duration</strong>: The amount of time in seconds to hold the frame</p>
+<p><strong>x</strong>: Starting point on the sheet for the upper left corner of your sprite’s x</p>
+<p><strong>y</strong>: Starting point on the sheet for the upper left corner of your sprite’s y</p>
+<p><strong>w</strong>: Width of the frame</p>
+<p><strong>h</strong>: Height of the frame</p>
+<p><strong>originy</strong>: y coordinate within the frame, used to align the placement of the frame</p>
+<p><strong>originx</strong>: x coordinate within the frame, used to align the placement of the frame</p>
+<p><strong>flipy</strong>: Flip along the y axis 0=false 1=true. Optional</p>
+<p><strong>flipx</strong>: Flip along the x axis 0=false 1=true. Optional</p>
+<p>flipx and flipy are not required but can be useful to cut down on workload for sprites that can be flipped!</p>
+<p>point label="Head" x="29" y="13"</p>
+<p><strong>point</strong> : Used to assign overlay points. Zero or more can be defined for a frame. Must come after a frame
+<strong>label</strong>: Name of the point. See Battle Animations for points used by battles</p>
 
               
             </article>
@@ -367,7 +406,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../enemies3/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Character.lua" rel="prev">
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -376,11 +415,26 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Character.lua
+              Introduction
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../cards/" class="md-footer__link md-footer__link--next" aria-label="Next: Chips Guide" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Chips Guide
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
