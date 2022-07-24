@@ -1,0 +1,10 @@
+nav:
+
+- index.md
+- Mod Guides:
+  - animations.md
+  - cards.md
+  - Enemy Mod Guide:
+    - enemies1.md
+    - enemies2.md
+    - enemies3.md

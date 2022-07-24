@@ -1,4 +1,4 @@
-# Unofficial Chip Making Guide
+# Chips Guide
 
 Welcome to the first ONB chip making guide. In this tutorial we will be walking through the code of AirToss, a custom chip. This is a simple chip that sends out a tornado through the row and deals damage to entity it hits. The hit entity is also pushed back one tile.
 
